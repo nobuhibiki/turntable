@@ -1,0 +1,317 @@
+.audio {
+  margin-top: 10000px;
+}
+
+.turntable {
+  transform: rotate(-10deg);
+  margin-top: 100px;
+}
+
+.turntable-wood {
+  position: absolute;
+  background-image: url(src/wood.jpg);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 1100px;
+  height: 500px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+.turntable-back {
+  position: absolute;
+  background-color: #C6C6C6; 
+  width: 250px;
+  height: 500px;
+  border-radius: 0 1em 1em 0;
+  margin-left: 850px;
+  z-index: -1;
+}
+.play {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 200px;
+  border-radius: 0 0 0 0em;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: #afafaf;
+  box-sizing: border-box; 
+}
+.play i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #afafaf;
+}
+.pause {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  margin-left: 148px;
+  border-radius: 0 0 0 1em;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: #afafaf;
+  box-sizing: border-box; 
+}
+.pauseIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: 13px;
+  border-radius: 5px;
+  background-color: #afafaf;
+}
+
+
+/* vinyl */
+.vinyl-indent {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  background: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  border-radius: 50%;
+  margin-top: 55px;
+  margin-left: 35px;
+  z-index: -1;
+  clip: rect(0px,1000px,445px,0px);
+}
+.vinyl {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #333333;
+  border-radius: 50%;
+  margin-top: 70px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.spinVinyl {
+  animation: spin 10s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1px solid #222;
+  box-sizing: border-box; 
+  
+}
+.circle:nth-child(1) {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.circle:nth-child(2) {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+.circle:nth-child(3) {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.circle:nth-child(4) {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.circle:nth-child(5) {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.vinyl-inside-1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #C6C6C6;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.vinyl-inside-2 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: none;
+  margin-top: 40px;
+  margin-left: 40px;
+  border: 10px solid #333;
+  box-sizing: border-box;
+  animation: spin 10s linear infinite;
+}
+
+.vinyl-inside-3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-top: 125px;
+  margin-left: 125px;
+}
+#vinyl {
+  background-image: var(--image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* bottom circle */
+.circle-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 270px;
+  margin-left: 750px;
+  background-color: #6B6B6B;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+.circle-2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #333;
+}
+.circle-3 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: #c6c6c6;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+
+/* rod and pin */
+.rod {
+  position: relative;
+  width: 450px;
+  height: 20px;
+  border-radius: 20px;
+  margin-top: 80px;
+  margin-left: -260px;
+  background-color: #c6c6c6;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  z-index: 3;
+}
+.pin {
+  position: relative;
+  background-color: #C6C6C6;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: -30px;
+  margin-left: -250px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  z-index: 4;
+}
+
+/* top circle */
+.circle-4 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 600px;
+  z-index: -1;
+}
+.circle-5 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #c6c6c6;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.circle-6 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: #c6c6c6;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.circle-7 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #c6c6c6;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+/* strings */
+.string {
+  background-color: #424242;
+}
+
+
+/* albums */
+#album-list {
+  position: absolute;
+  padding-top: 750px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  transform: rotate(var(--random-rotate));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover {
+  transform: rotate(var(--random-rotate)) translateY(-50px);
+}
+
+.image-container img {
+  width: 100%; /* Occupy the full width of the container */
+  height: 100%; /* Occupy the full height of the container */
+  object-fit: cover; /* Resize the image to cover the container while preserving aspect ratio */
+}
